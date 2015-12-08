@@ -1,0 +1,17 @@
+@import "compass";
+@import "variables";
+@import "mixins";
+
+@import "bootstrap-compass";
+@import "bootstrap";
+
+@import "base";
+
+.navbar {
+  background-color: #f3c859;
+  color: white;
+
+  a {
+    color: white;
+  }
+}
