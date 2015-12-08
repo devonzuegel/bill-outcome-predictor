@@ -96,7 +96,9 @@ activate :deploy do |deploy|
   # deploy.build_before = true
 
   # rsync, ftp, sftp, or git
-  deploy.method = :git
+  deploy.method       = :git
+  deploy.branch       = 'master'
+  deploy.build_before = true
 
   # remote name or git url, default: origin
   # deploy.remote   = 'custom-remote'
@@ -107,3 +109,5 @@ activate :deploy do |deploy|
   # commit strategy: can be :force_push or :submodule, default: :force_push
   # deploy.strategy = :submodule
 end
+
+activate :directory_indexes
