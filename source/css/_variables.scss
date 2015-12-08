@@ -1,16 +1,40 @@
-// Variables
+////////// Variables /////////////////////////////////////////////////////////////////
 
 // Scaffolding
-$body-bg: #fff;
-$text-color: #333;
-$link-color: #337ab7;
-$link-hover-color: darken($link-color, 15%);
-$link-hover-decoration: underline;
+$body-bg:                #fff;
+$text-color:             #333;
+$link-color:             #337ab7;
+$link-hover-color:       darken($link-color, 15%);
+$link-hover-decoration:  underline;
 
 // Typography
 $font-family-sans-serif: "San Francisco Display", Helvetica, Arial, sans-serif;
-$font-family-serif: Georgia, "Times New Roman", Times, serif;
-$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
-$font-family-base: $font-family-sans-serif;
-$font-size-base: 15px;
-$line-height-base: 1.53;
+$font-family-serif:      "Merriweather", Times, serif;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-base:       $font-family-sans-serif;
+$font-size-base:         14px;
+$line-height-base:       1.53;
+
+// Colors
+$primary:                #0071bc;
+$primary-darker:         #205493;
+$primary-darkest:        #112e51;
+$base:                   #212121;
+$gray-dark:              #323a45;
+$gray-light:             #aeb0b5;
+$white:                  #ffffff;
+$yellow:                 #f3c859;
+$primary-alt-light:      #9bdaf1;
+$brand-primary:          $primary-darker;
+
+@import "bootstrap-compass";
+@import "bootstrap";
+
+$container-desktop:     ((440px + $grid-gutter-width));
+
+@media (min-width: 992px) {
+  /* line 10, /Users/devonzuegel/.rvm/gems/ruby-2.2.2/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_grid.scss */
+  .container {
+    width: 970px;
+  }
+}

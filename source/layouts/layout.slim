@@ -25,10 +25,6 @@ html lang="en"
             li= link_to 'About', '#about'
             li= link_to 'Contact', '#contact'
 
-    header role='banner'
-      .container
-        h1= current_page.data.title
-
     .wrap
       .container
         .row
@@ -38,11 +34,13 @@ html lang="en"
                 = yield
 
           .col-sm-3
-            aside role='complementary'
+            aside.fixed role='complementary'
               nav.list-group role='navigation'
-                = link_to 'Home',    '#home',    class: 'list-group-item active'
-                = link_to 'About',   '#about',   class: 'list-group-item'
-                = link_to 'Contact', '#contact', class: 'list-group-item'
+                = link_to 'Data Sources & Infrastructure', '#infrastructure',    class: 'list-group-item'
+                = link_to 'Data Exploration',              '#data-exploration',  class: 'list-group-item'
+                = link_to 'Approach',                      '#approach',          class: 'list-group-item'
+                = link_to 'Literature Review',             '#literature-review', class: 'list-group-item'
+                = link_to 'Error Analysis',                '#error-analysis',    class: 'list-group-item'
 
     footer role='contentinfo'
       .container
