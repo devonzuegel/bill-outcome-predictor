@@ -1,18 +1,3 @@
-# Middleman Template: bootstrap-sass-slim
+# CS 221 Project: Bill Outcome Predictor #
 
-A Middleman Project Template built with Twitter Bootstrap, Sass & Slim
-
-## Usage
-
-```
-git clone https://github.com/shimoju/middleman-bootstrap-sass-slim.git ~/.middleman/bootstrap-sass-slim
-middleman init my_new_project --template=bootstrap-sass-slim
-```
-
-## License
-
-[MIT](https://github.com/shimoju/middleman-bootstrap-sass-slim/blob/master/LICENSE)
-
-## Author
-
-[Hiroshi Shimoju](https://github.com/shimoju)
+This repository contains the static site for our final project for CS 221. You can find the repository with our data and algorithmic work [here](https://github.com/devonzuegel/cs221-project/).
