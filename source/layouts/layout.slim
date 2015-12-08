@@ -21,9 +21,8 @@ html lang="en"
             span.icon-bar
         #navbar.collapse.navbar-collapse
           ul.nav.navbar-nav
-            li.active= link_to 'Home', '#home'
-            li= link_to 'About', '#about'
-            li= link_to 'Contact', '#contact'
+            li.active= link_to 'Home',  '/'
+            li=        link_to 'About', '/about.html'
 
     .wrap
       .container
@@ -33,14 +32,15 @@ html lang="en"
               section
                 = yield
 
-          .col-sm-3
-            aside.fixed role='complementary'
-              nav.list-group role='navigation'
-                = link_to 'Data Sources & Infrastructure', '#infrastructure',    class: 'list-group-item'
-                = link_to 'Data Exploration',              '#data-exploration',  class: 'list-group-item'
-                = link_to 'Approach',                      '#approach',          class: 'list-group-item'
-                = link_to 'Literature Review',             '#literature-review', class: 'list-group-item'
-                = link_to 'Error Analysis',                '#error-analysis',    class: 'list-group-item'
+          - if current_page.url == '/'
+            .col-sm-3
+              aside.fixed role='complementary'
+                nav.list-group role='navigation'
+                  = link_to 'Data Sources & Infrastructure', '#infrastructure',    class: 'list-group-item'
+                  = link_to 'Data Exploration',              '#data-exploration',  class: 'list-group-item'
+                  = link_to 'Approach',                      '#approach',          class: 'list-group-item'
+                  = link_to 'Literature Review',             '#literature-review', class: 'list-group-item'
+                  = link_to 'Error Analysis',                '#error-analysis',    class: 'list-group-item'
 
     footer role='contentinfo'
       .container
