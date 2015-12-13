@@ -6,6 +6,7 @@
 @import "bootstrap";
 
 @import "base";
+@import "basic-table";
 
 .navbar {
   background-color: $primary-darker;
@@ -31,4 +32,21 @@ h2 {
 
 h3 {
   font-style: italic;
+}
+
+.nav > li, .nav > li {
+  background-color: $primary-darker;
+  border-bottom: 3px solid $primary-darker;
+}
+
+.nav > li:hover, .nav > li:focus {
+  border-bottom: 3px solid white;
+}
+
+.nav > li > a, .nav > li > a {
+  padding-bottom: 11px;
+
+  &:hover, &:focus {
+    background-color: $primary-darker;
+  }
 }
